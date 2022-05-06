@@ -1,0 +1,21 @@
+#docker-composeのバージョンを指定
+version: "3.8"
+
+services:
+  #RAILS(API側のコンテナ)
+  #フロント側のコンテナ
+  front:
+    container_name: front
+    build: ./front
+      #context: ./front/
+      #args:
+      #  WORKDIR: app
+      #  API_URL: "http://api:$API_PORT"
+      #  API_URL_BROWSER: "http://localhost:$API_PORT"
+    command: yarn run dev
+    ports:
+      - "8080:3000"
+    volumes:
+      - ./front:/app:cashed
+    tty: true
+    stdin_open: true

@@ -7,6 +7,7 @@
       fixed
       app
     >
+    <v-system-bar color="deep-purple darken-3"></v-system-bar>
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -80,7 +81,7 @@ export default {
         },
         //ここから試しに追加
         {
-          icon: 'mdi-account',
+          icon: 'mdi-account-box-multiple',
           title: 'Users',
           to: '/users'
         },
@@ -90,9 +91,14 @@ export default {
           to: '/sample'
         },
         {
-          icon: 'mdi-domain',
-          title: 'test',
-          to: '/test'
+          icon: 'mdi-exit-run',
+          title: 'login',
+          to: '/login'
+        },
+        {
+          icon: 'mdi-newspaper-variant',
+          title: 'projects',
+          to: '/projects'
         }
       ],
       miniVariant: false,

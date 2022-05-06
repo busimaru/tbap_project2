@@ -1,11 +1,11 @@
 <template>
   <v-card v-if="items">
-    <h1>TEST </h1>
+    <h1>プロジェクト一覧</h1>
   </v-card>
 </template>
 <script>
 export default {
-  name: 'TestPage',
+  name: 'ProjectIndex',
   data: () => ({
     items: [
       { title: 'Click Me' },

@@ -4,6 +4,9 @@
       <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />
+        <!--API取得用に作成中 -->
+        <v-btn>GET API</v-btn>
+        <!--<v-btn @click="getApi()">GET API</v-btn> -->
       </v-card>
       <v-card>
         <v-card-title class="headline">
@@ -78,6 +81,24 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data:() =>{
+    return{
+      message:''
+    }
+  },
+  // methodsは現状使用していない
+  methods:{
+    getApi(){
+      const url = "/api/v1/hello"
+      this.$axios.get(url)
+        .then((res) => {
+          this.message = res.data
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    }
+  }
 }
 </script>

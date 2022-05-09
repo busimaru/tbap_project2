@@ -7,7 +7,6 @@
       fixed
       app
     >
-    <v-system-bar color="deep-purple darken-3"></v-system-bar>
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -99,6 +98,11 @@ export default {
           icon: 'mdi-newspaper-variant',
           title: 'projects',
           to: '/projects'
+        },
+        {
+          icon: 'mdi-home-search',
+          title: 'post',
+          to: '/post'
         }
       ],
       miniVariant: false,

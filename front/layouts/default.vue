@@ -100,6 +100,11 @@ export default {
           to: '/projects'
         },
         {
+          icon: 'mdi-newspaper',
+          title: 'project detail',
+          to: '/projectdetail'
+        },
+        {
           icon: 'mdi-home-search',
           title: 'post',
           to: '/post'
@@ -108,7 +113,12 @@ export default {
           icon: 'mdi-vuetify',
           title: 'test',
           to: '/test'
-        }
+        },
+        {
+          icon: 'mdi-calendar',
+          title: 'calender',
+          to: '/calender'
+        },
       ],
       miniVariant: false,
       right: true,

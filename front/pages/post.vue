@@ -18,8 +18,8 @@
     </v-btn>
     <!-- リストで出せるように改造中 v-for= in-->
     <ul>
-      <li v-for="value in result">
-        {{ value }}
+      <li v-for=" (value,name) in result">
+        {{ name }}:{{ value }}
       </li>
     </ul>
   </v-card >

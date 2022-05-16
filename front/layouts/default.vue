@@ -44,6 +44,12 @@
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <v-btn depressed rounded>
+        <span>Sign Out</span>
+        <v-icon right large>
+          mdi-exit-to-app
+        </v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -120,8 +126,8 @@ export default {
           to: '/calender'
         },
       ],
-      miniVariant: false,
-      right: true,
+      miniVariant: true,
+      right: false,
       rightDrawer: false,
       title: 'Vuetify.js'
     }
